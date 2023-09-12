@@ -40,6 +40,11 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
+
+
+
+
+
   static const platform = MethodChannel('com.Fininfocom.fininfocom/bluetooth');
 
   Future<void> enableBluetooth() async {

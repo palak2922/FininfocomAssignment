@@ -26,9 +26,6 @@ class Detailservice{
     try {
       var response = await http.get(
         Uri.parse('https://dog.ceo/api/breeds/image/random'),
-        headers: <String, String>{
-          'Content-Type': 'application/json; charset=UTF-8',
-        },
       );
       final responseData = handleResponse(response);
       return responseData['message'];
